@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Muchas Gracias!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        /* Estilos específicos para esta página */
+        body {
+            /* Fondo oscuro con degradado festivo */
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh; /* Altura completa de la pantalla */
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center; /* Centrado vertical */
+            color: white;
+            overflow: hidden; /* Evita barras de desplazamiento por el confeti */
+        }
+
+        /* Animación suave del fondo */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .mensaje-contenedor {
+            text-align: center;
+            z-index: 10; /* Asegura que el texto esté sobre el fondo */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que se lea mejor */
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+
+        /* Botón para volver */
+        .btn-volver {
+            margin-top: 2rem;
+            color: white;
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+        .btn-volver:hover {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mensaje-contenedor">
+        <i class="bi bi-trophy-fill text-warning" style="font-size: 4rem;"></i>
+        <h1 class="display-1">¡Muchas Gracias!</h1>
+        <p class="lead fs-3">Por visitar nuestro Proyecto fruto de mucho esfuerzo y sacrificio.</p>
+        <p class="fs-5 text-white-50">¡Esperamos que le haya gustado profe!</p>
+
+         <div class="my-4">
+            <img src="assets/video/Baile Pedro GIF.gif" alt="Gif animado de agradecimiento" class="img-fluid rounded-4 shadow-lg" style="max-width: 250px; height: auto;">
+        </div>
+        
+
+
+        <a href="index.html" class="btn btn-volver btn-lg rounded-pill px-4">
+            <i class="bi bi-house-door-fill me-2"></i> Volver al Inicio
+        </a>
+    </div>
+
+    <audio id="musicaFondo" src="assets/audio/navidad_remix_corto.mp3" autoplay loop></audio>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // --- CONFIGURACIÓN DEL EFECTO DE CONFETI ---
+
+        // Función para lanzar una explosión de papelitos
+        function lanzarConfeti() {
+            var duration = 5 * 1000; // Duración en milisegundos (5 segundos)
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+
+                // Lanza confeti desde dos puntos al azar en la parte superior
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+
+        // --- ACTIVAR EFECTOS AL CARGAR ---
+        window.addEventListener('load', function() {
+             // 1. Lanzar los papelitos
+            lanzarConfeti();
+
+            // 2. Intentar asegurar la reproducción de música
+            // (A veces los navegadores bloquean el 'autoplay' si no hay interacción previa)
+            var audio = document.getElementById("musicaFondo");
+            audio.volume = 0.5; // Volumen al 50% para que no aturda
+            audio.play().catch(function(error) {
+                console.log("El navegador bloqueó la reproducción automática de audio hasta que el usuario interactúe.");
+                // Si falla, se activará cuando el usuario haga clic en cualquier lado de la página
+                document.body.addEventListener('click', function() {
+                    audio.play();
+                }, { once: true });
+            });
+        });
+    </script>
+
+</body>
+</html>

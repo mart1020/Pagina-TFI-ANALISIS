@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega 3️⃣</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="nosotros.html">
+
+                <img src="assets/img/logoUNT.png" alt="Logo de la Empresa">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+             <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="1entrega.html">1ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="2entrega.html">2ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="3entrega.html">3ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="4entrega.html">4ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="agradecimientos.html">Agradecimientos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 mt-5">
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-8 text-center">
+                <h1 class="fw-bold display-5 mb-3">Metodología del Proceso Unificado</h1>
+                
+                <hr class="my-4 text-primary" style="opacity: 1; height: 2px; width: 50%; margin: auto;">
+                <h2 class="text-primary fw-bold mb-4">Modelo de Caso de Uso</h2>
+                    
+            </div>
+
+        </div>
+
+        
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 01: Alta de Empleado</h2>
+
+                    <p class="mb-4">A continuación se listan las funcionalidades técnicas críticas detectadas durante el relevamiento:</p>
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH (actor principal)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El usuario debe haber iniciado sesión en el sistema </span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra un nuevo empleado en el sistema.</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se genera automáticamente su Legajo asociado.</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra el estado inicial del empleado (Activo o En Revisión).</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se guarda una entrada en el HistoricoEstado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario solicita  “Alta de empleado”.</span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>El sistema solicita completar los datos obligatorios.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>El usuario completa y confirma</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>El sistema valida la información.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>El sistema crea el empleado y su legajo.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>6. </strong>El sistema registra el estado inicial.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>7. </strong>El sistema muestra confirmación de alta.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>8. </strong>usuario finaliza alta de empleado.</span> 
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3a.Falta un dato obligatorio </strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema solicita completarlo.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>Continuar en paso 2.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>4a. DNI duplicado</strong></span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema cancela el alta y muestra advertencia.</span>
+                        </li>
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Requisitos Especiales:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Validación estricta de unicidad de DNI.</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>Reglas de formato para email, teléfono, fecha de ingreso.</span>
+                        </li>
+
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Lista de tecnología:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Sistema Web:</strong>(arquitectura cliente–servidor)</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Backend: </strong>Java + Spring Boot</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Frontend: </strong>HTML5 / React (si aplica)</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Base de Datos: </strong>MariaDB / SQL</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Servidor Interno DPA </strong>(red y seguridad)</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Control de Acceso:  </strong>OAuth2 + JWT</span>
+                        </li>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>•	Sistema de asistencia: </strong>Reloj biométrico externo (huella / tarjeta)</span>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 02: Modificación de Empleado</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH (actor principal)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El empleado debe existir. </span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario con permisos de modificación.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Los datos se actualizan y se registran </span>
+                        </li>
+                         
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario solicita modificar datos del empleado</span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>el usuario ingresa número de legajo </span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>el sistema valida legajo y busca legajo</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>el sistema muestra datos del empleado</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>usuario ingresa datos a modificar</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>6. </strong>el sistema valida y registra modificación</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>7. </strong>el usuario finaliza la modificación </span> 
+                        </li>
+
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3d.Dato restringido </strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema informa que el dato no puede modificarse.</span>
+                        </li>
+                       
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>4a. Validación fallida</strong></span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema informa el error.</span>
+                        </li>
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Requisitos Especiales:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Toda modificación queda auditada.</span>
+                        </li>
+                        
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 03: Baja de Empleado</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH (actor principal)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El empleado debe estar en estado Activo o Baja Temporal.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario con permisos para dar bajas.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El empleado pasa a estado Baja Definitiva o Baja Temporal (según motivo). </span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra el cambio en el histórico. </span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El legajo queda bloqueado para nuevas modificaciones salvo consulta. </span>
+                        </li> 
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario ingresa legajo de empleado</span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>El sistema busca legajo y muestra datos del empleado</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>El usuario ingresa el motivo de baja</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>El sistema valida y solicita confirmación.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>El sistema  actualiza el estado de empleado</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>6. </strong>El sistema registra el histórico.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>7. </strong>El sistema muestra confirmación.</span> 
+                        </li>
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>8. </strong>El usuario finaliza baja empleado</span> 
+                        </li>
+
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3a. Motivo incompleto</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema solicita completarlo.</span>
+                        </li>
+                       
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>4b. Cancelación del usuario</strong></span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema vuelve a la pantalla anterior.</span>
+                        </li>
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Requisitos Especiales:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Política de retención documental: conservar registro por 5 años.</span>
+                        </li>
+                        
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+         <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 04: Consulta</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Secretaría General</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Servicio Administrativo</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Deben existir registros de asistencia previamente sincronizados con el sistema de reloj.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autenticado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>No se modifica información; solo se visualizan registros. </span>
+                        </li>
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario ingresa “Legajo” de empleado </span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>El usuario ingresa filtro(area,estado de empleado, fecha, nombre apellido)</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>Sistema valida información</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>El sistema consulta y valida registros de asistencia en sistema de apoyo (reloj digital)</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>El sistema muestra los resultados.</span> 
+                        </li>
+
+
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3a. No hay datos según filtros</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema muestra “Sin resultados”.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3b. Fallo de sincronización con el reloj</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema muestra alerta</span>
+                        </li>
+                       
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Requisitos Especiales:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Los datos de asistencia solo pueden ser consultados, nunca editados.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Debe manejar horarios nocturnos, doble turno, feriados y tolerancias.</span>
+                        </li>
+                        
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        
+         <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 05: Carga de Documento</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH</span>
+                        </li>
+                       
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Servicio Administrativo</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El empleado debe existir.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El archivo debe ser válido en extensión y tamaño.</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El usuario debe estar autenticado y tener permisos de carga.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se almacena el archivo en el sistema. </span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra un nuevo documento asociado. </span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Si corresponde, se notifica a Asesoría Legal. </span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>•	Se conserva el versionado documental (si el tipo de documento ya existía). </span>
+                        </li>
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario ingresa “Legajo” de empleado </span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>El sistema valida información </span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>El usuario selecciona “Carga de documentación”.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>El usuario Selecciona tipo de documento.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>El usuario Adjunta archivo.</span> 
+                        </li>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>6. </strong>El sistema valida tamaño y formato</span> 
+                        </li>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>7. </strong>El sistema guarda el archivo.</span> 
+                        </li>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>8. </strong>El sistema registra la carga</span> 
+                        </li>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>9. </strong>El sistema muestra confirmación.</span> 
+                        </li>
+
+
+                       
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>2a. Tipo no permitido</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema solicita elegir un tipo válido.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3a. Archivo corrupto o excedido</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema informa el error.</span>
+                        </li>
+                       
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Notas:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>Debe conservarse el historial de versiones de un documento si ya existía uno del mismo tipo.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El nombre del archivo no debe contener caracteres inválidos.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>3. </strong>•	Se debe registrar el usuario que realizó la carga.</span>
+                        </li>
+                        
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Caso de uso 06: Cambio de Estado</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Actores:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado del Área RRHH</span>
+                        </li>
+                       
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>•	Asesoría Legal</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El empleado debe existir.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El usuario debe estar autorizado </span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Postcondiciones</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El estado del empleado se actualiza. </span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El estado del empleado se actualiza. </span>
+                        </li>
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Escenario Principal de Éxito:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>1. </strong>El usuario ingresa “Legajo” </span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>2. </strong>El sistema muestra estado actual y posibles estados.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>3. </strong>El usuario cambiaEstado(nuevoEstado, motivo).</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>4. </strong>El sistema valida.</span> 
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>El sistema registra el cambio.</span> 
+                        </li>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>6. </strong>El sistema muestra confirmación.</span> 
+                        </li>
+
+                        </li>
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Extensiones (Flujos Alternativos):</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>*a. El sistema falla</strong></span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El empleado reinicia el sistema.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>El sistema vuelve al paso 1.</span>
+                        </li>
+
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3a. Estado incompatible</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema informa que no puede aplicarse.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2.  </strong>Continúa en paso 2.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>3b. Motivo incompleto</strong> </span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El sistema solicita completarlo.</span>
+                        </li>
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <span><strong>2. </strong>Continúa en paso 3.</span>
+                        </li>
+
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span><strong>Notas:</strong></span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong>1. </strong>El reloj NO interviene en este flujo.</span>
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <span><strong></strong>Transiciones automáticas NO forman parte de este caso (solo manual).</span>
+                        </li>
+
+                        
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+
+       
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h1 class="fw-bold text-dark">Fase de Elaboración</h1> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+
+
+                    <h2 class="fw-bold text-primary">Diagrama de Casos de Uso</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/diagrama casos de usos.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Modelo de Dominio</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/modelodedominio.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Diagrama de Secuencias</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/Gestionalta.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/Gestionbaja.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/GestionMODIFICACION.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/GESTIONCONSULTA.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/cARGAde documento.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/GestionCambioDEestado.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+                <div class="row justify-content-center mb-5 scroll-hidden">
+                                <div class="col-lg-8 text-center">
+                                    <h1 class="fw-bold display-5 mb-3">Contratos</h1>
+                                    
+                                    <hr class="my-4 text-primary" style="opacity: 1; height: 2px; width: 50%; margin: auto;">
+                                </div>
+                </div>
+
+        </section>
+
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT01 – Crear Empleado (Alta)</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>ingresarEmpleado(datosEmpleado)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Crear nuevo empleado, generar legajo y registrar estado inicial.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>datosEmpleado: nombre, apellido, DNI, área, fechaIngreso, estadoInicial</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Confirmación de alta</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado creado</span>
+                        </li>
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Legajo generado</span>
+                        </li>
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autenticado</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>DNI no existente</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se crea el empleado</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se genera el legajo</span>
+                        </li>        
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra estado inicial</span>
+                        </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra histórico</span>
+                        </li> 
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT02 – Modificar Empleado</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>modificarEmpleado(legajo, dato, nuevoValor)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Actualizar información del empleado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>legajo</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>dato a modificar</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>nuevoValor</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Confirmación de modificación</span>
+                        </li>
+                     
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado existe</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autorizado</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se actualiza el dato</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra histórico</span>
+                        </li>         
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT03 – Baja de Empleado</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>darBajaEmpleado(legajo, motivo)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Registrar baja definitiva o temporal del empleado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>legajo</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>motivo</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>•	Confirmación de baja</span>
+                        </li>
+                        
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado activo o en baja temporal</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autorizado</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Estado actualizado</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Legajo bloqueado</span>
+                        </li>        
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Histórico actualizado</span>
+                        </li> 
+
+                       
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT04 – Consultar Asistencia</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>consultarAsistencia(filtros)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Filtrar registros de asistencia y mostrarlos.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>filtros (legajo, área, estado, fecha, nombre/apellido)</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Lista de registros de asistencia coincidentes</span>
+                        </li>
+                        
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autenticado</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Registros existentes</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>No modifica datos</span>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT05 – Cargar Documento</h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>cargarDocumento(legajo, tipoDocumento, archivo)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Validar y almacenar un documento asociado al empleado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>legajo</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>tipoDocumento</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>archivo</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Confirmación de carga</span>
+                        </li>
+                        
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado existe</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Archivo válido</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Archivo almacenado</span>
+
+                        </li>
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Documento registrado</span>
+
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Versionado preservado (si existe documento previo)</span>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                
+
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    
+                    <h2 class="fw-bold mb-4">Contrato CONT06 – Cambio de Estado </h2>
+
+                    
+
+                    <h5 class="fw-bold mb-4">Operación:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>cambiarEstado(legajo, nuevoEstado, motivo)</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Actualizar el estado del empleado.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Entradas:</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>legajo</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>nuevoEstado</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>motivo</span>
+                        </li>
+                      
+                      
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Salidas:</h5>
+
+                    <ul class="list-unstyled">
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Confirmación de cambio</span>
+                        </li>
+                        
+
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Precondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Empleado existe</span>
+
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Usuario autorizado</span>
+                        </li>               
+
+                    </ul>
+
+                    
+                    <h5 class="fw-bold mb-4">Postcondiciones:</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Estado actualizado</span>
+
+                        </li>
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Histórico registrado</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Diagrama de Transición de Estados</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/DiagramadeEstado.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Modelo de Analisis</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/DiagramadeAnalisis.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="p-5 bg-light rounded-3 border border-secondary-subtle">
+                    <h3 class="fw-bold text-dark mb-3">3. Conclusiones Preliminares</h3>
+                    <p>
+                        Con base en lo expuesto, se concluye que la arquitectura propuesta satisface los requerimientos no funcionales de escalabilidad y seguridad solicitados por el cliente.
+                    </p>
+                    <p class="mb-0 text-muted fst-italic">
+                        * Este documento está sujeto a revisiones y cambios por parte de la cátedra hasta la fecha de entrega final.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container"><p class="mb-0">&copy; 2025 Proyecto integrador - Analisis en Sistemas de la Informacion</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega 4️⃣</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="nosotros.html">
+
+                <img src="assets/img/logoUNT.png" alt="Logo de la Empresa">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+             <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="1entrega.html">1ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="2entrega.html">2ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="3entrega.html">3ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="4entrega.html">4ª Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="agradecimientos.html">Agradecimientos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 mt-5">
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-8 text-center">
+                <h1 class="fw-bold display-5 mb-3">Prototipos</h1>
+                
+                <hr class="my-4 text-primary" style="opacity: 1; height: 2px; width: 50%; margin: auto;">
+                
+                    
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-10">
+                <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">Prototipos NO operacionales</h2>
+
+                    <p class="mb-4">Como parte del Proceso Unificado, se desarrollaron prototipos no operacionales (mockups) con el objetivo de validar los requerimientos funcionales antes del diseño detallado e implementación.
+                        Estos prototipos permitieron a los actores internos revisar:
+                    </p>
+
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                                <span>El flujo de interacción con el sistema.</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                                <span>Los datos requeridos en cada operación.</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                                <span>El comportamiento esperado ante validaciones y restricciones.</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                                <span>La consistencia entre los Casos de Uso y la interfaz.</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                                <span>La detección temprana de errores o requisitos faltantes.</span>
+                            </li>
+                       
+                        </ul>
+
+                    <h4 class="fw-bold mb-4">Prototipos desarrollados:</h4>
+                    <h5 class="fw-bold mb-4">Pantalla de Alta de Empleado</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Etiquetas descriptivas para cada dato solicitado.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Cuadros de texto para apellido, nombre, DNI, dirección, etc.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Controles para validación de formato (DNI, fechas).</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Lista desplegable para seleccionar el estado inicial.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Botón de comando Guardar.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Pantalla de Modificación de Empleado</h5>
+                    <p>Permite:</p>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Ingresar un legajo existente para su búsqueda.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Visualizar los datos actuales del empleado.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Editar únicamente los campos habilitados para modificación.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Validación gráfica de datos inconsistentes.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Botones de comando Guardar y Cancelar.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Pantalla de Consulta de Empleados</h5>
+                    <p>Incluye:</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Filtros por campo: legajo, apellido, área y estado.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Listas desplegables para selección de criterios.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Botón de comando Buscar.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Tabla de resultados con columnas Legajo, Nombre, Apellido y Estado.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Mensajes informativos para situaciones de “sin resultados”.</span>
+                        </li>
+                       
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Pantalla de Carga de Documento</h5>
+                    <p>Incluye:</p>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Campo para ingresar el número de legajo.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Lista desplegable con los tipos de documentos permitidos.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Selector de archivos.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Validación visual de extensión y tamaño permitido.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Mensajes de error ante documentos no válidos (formato incorrecto, tamaño excedido).</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Vista del historial de documentos cargados.</span>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Botón de comando Subir.</span>
+                        </li>
+                    
+                    </ul>
+
+                    <h5 class="fw-bold mb-4">Pantalla de Cambio de Estado</h5>
+                    <p>Incluye:</p>
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Ingreso de legajo para búsqueda.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Visualización del estado actual del empleado.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Lista desplegable con los estados permitidos.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Cuadro de texto para ingresar el motivo del cambio.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Botón de comando Confirmar.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Mensajes de advertencia en caso de transiciones no permitidas</span>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <section>
+     
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Prototipos</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/prototipos1.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/prototipos2.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/prototipos3.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+
+        </section>
+
+        <div class="row justify-content-center mb-5 scroll-hidden">
+            <div class="col-lg-8 text-center">
+                <h1 class="fw-bold display-5 mb-3">Informe de Viabilidad</h1>
+                
+                <hr class="my-4 text-primary" style="opacity: 1; height: 2px; width: 50%; margin: auto;">
+                
+                    
+            </div>
+
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                        <div class="d-flex align-items-center mb-4">
+                                            <i class="bi bi-table fs-3 text-primary me-3"></i>
+                                            <h2 class="fw-bold m-0">Viabilidad técnica</h2>
+                                            
+                                        </div>
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Recursos de Hardware</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Nombre</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tecnologías de Entrada de datos <br> PC empresarial / teclado – scanner </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Salida <br> Monitor / PC empresarial </td>
+                                                        
+                                                    </tr>
+
+                                                      <tr>
+                                                        <td>Tecnologías de Procesamiento <br> CPU de PC empresarial</td>
+                                                        
+                                                    </tr>
+
+                                                      <tr>
+                                                        <td>Tecnologías de Almacenamiento <br> Almacenamiento interno físico / PC empresarial / Servidores</td>
+                                                        
+                                                    </tr>
+
+                                                      <tr>
+                                                        <td> Tecnologías de Comunicaciones <br> Servidor Interno DPA (red y seguridad) <br> Sistema de asistencia: Reloj biométrico externo (huella / tarjeta) </td>
+                                                        
+                                                    </tr>
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+        
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Recursos de Software</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Especificación de los recursos de Software</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Sistema operativo <br> Windows 10 en adelante </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lenguaje de programación<br> Backend: Java + Spring Boot <br> Frontend: HTML5 / React (si aplica)  </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Antivirus<br> Avast (contrato empresarial)</td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Base de Datos <br> MariaDB / SQL</td>
+                                                        
+                                                    </tr>
+                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                        <div class="d-flex align-items-center mb-4">
+                                            <i class="bi bi-table fs-3 text-primary me-3"></i>
+                                            <h2 class="fw-bold m-0">Viabilidad económica</h2>
+                                            
+                                        </div>
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Estimación de Costos Hardware</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Recursos de Hardware</th>
+                                                        <th scope="col" >Costos ($)</th>
+                                                        <th scope="col" >Proveedor</th>
+                                                        <th scope="col" >Garantía / Soporte</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Entrada</td>
+                                                        <td> 0 </td>
+                                                        <td>Ya lo posee la empresa </td>
+                                                        <td> -   </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Salida</td>
+                                                        <td>0 </td>
+                                                        <td> Ya lo posee la empresa </td>
+                                                        <td> - </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Procesamiento</td>
+                                                        <td>0 </td>
+                                                        <td> Ya lo posee la empresa </td>
+                                                        <td> - </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Almacenamiento</td>
+                                                        <td>0 </td>
+                                                        <td> Ya lo posee la empresa </td>
+                                                        <td> - </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tecnologías de Comunicaciones</td>
+                                                        <td> $6.774.818</td>
+                                                        <td> NANOTEC SRL </td>
+                                                        <td>6 meses garantía – soporte 24 hs </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="fw-bold">Costo Total</td>
+                                                        <td class="fw-bold"> $6.774.818</td>
+                                                        <td> - </td>
+                                                        <td> - </td>
+                                                    </tr>
+
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                        
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Estimación de Costos del Software a adquirir</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Software</th>
+                                                        <th scope="col" >Licencia ($)</th>
+                                                        <th scope="col" >Cantidad</th>
+                                                        <th scope="col" >Tiempo</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td> Sistema operativo</td>
+                                                        <td> $ 179.999,00</td>
+                                                        <td>1 </td>
+                                                        <td> Licencia permanente  </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lenguaje de programación</td>
+                                                        <td>$ 0</td>
+                                                        <td> -</td>
+                                                        <td> - </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Antivirus</td>
+                                                        <td>$ 37433,44</td>
+                                                        <td> 1 </td>
+                                                        <td> Licencia 1 año</td>
+                                                        
+                                                    </tr>
+
+                                                    
+                                                    <tr>
+                                                        <td class="fw-bold">Costo Total</td>
+                                                        <td class="fw-bold"> $ 217.433</td>
+                                                        <td> - </td>
+                                                        <td> - </td>
+                                                    </tr>
+
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">                                   
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Estimación de Costos de desarrollo</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Desarrollo  e implantación del Sistema de Información</th>
+                                                        <th scope="col" >Costo</th>
+                                                        <th scope="col" >Tiempo</th>
+                                                        
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td class="fw-bold"> Costo Total</td>
+                                                        <td>  $ 560.000</td>
+                                                        <td>60.000 por computadora en rango de 1 semana </td>
+                                                       
+                                                    </tr>
+
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                        
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h4 class="fw-bold m-0">Estimación de Costos del personal</h4>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Equipo de Desarrollo</th>
+                                                        <th scope="col" >Costos</th>
+                                                        <th scope="col" >Cantidad</th>
+                                                        <th scope="col" >Tiempo</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td class="fw-bold"> Gestor del proyecto</td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Ingenieros en Sistemas de Información</td>
+                                                        <td>$ 418.500</td>
+                                                        <td> 1</td>
+                                                        <td> $2.250 por hora </td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Analistas de Sistemas</td>
+                                                        <td>$ 241.800</td>
+                                                        <td> 1 </td>
+                                                        <td> $1.300 por hora</td>
+                                                        
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td>Programadores</td>
+                                                        <td>$ 114.204</td>
+                                                        <td> 2 </td>
+                                                        <td>$307 por hora</td>
+                                                        
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td>Arquitecto de Sistemas</td>
+                                                        <td>$ 260.400/td>
+                                                        <td> 1 </td>
+                                                        <td>$1400 por hora</td>
+                                                        
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="fw-bold">Usuarios Finales</td>
+                                                     
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Usuarios del sistema de información</td>
+                                                        <td>$ 0</td>
+                                                        <td> 29 </td>
+                                                        <td>-</td>
+                                                        
+                                                    </tr>
+
+                                                    
+                                                    <tr>
+                                                        <td class="fw-bold">Costo Total</td>
+                                                        <td class="fw-bold"> $ 1.034.904</td>
+                                                        <td> - </td>
+                                                        <td> - </td>
+                                                    </tr>
+
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+        
+         <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5">
+                                        
+                                        <div class="d-flex align-items-center mb-4">
+                                            <i class="bi bi-table fs-3 text-primary me-3"></i>
+                                            <h2 class="fw-bold m-0">Viabilidad operacional</h2>
+                                            
+                                        </div>
+
+                                        <div class="d-flex align-items-center mb-4">
+                                            <h3 class="fw-bold m-0">Gestión del Proyecto</h3>
+                                        </div>
+
+                                        <h4 class="fw-bold m-0">Estudio de Riesgos del proyecto</h4>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Tipo de Riesgo</th>
+                                                         <th scope="col" >Posible riesgo</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tecnológico</td>
+                                                        <td><span class="badge bg-warning text-dark">Medio</span> La mayoría del sistema ya lo posee la empresa</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Personal</td>
+                                                        <td><span class="badge bg-danger">Alto</span> Se necesita capacitación de personal</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Organizacional</td>
+                                                        <td><span class="badge bg-success">Bajo</span>La empresa está preparada para implementación</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Requerimientos</td>
+                                                        <td><span class="badge bg-success">Bajo</span> Posee requerimientos necesarios</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Herramientas</td>
+                                                        <td><span class="badge bg-success">Bajo</span>Se posee las herramientas necesarias</td>
+                                                    </tr>
+
+                         
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+        <section>
+            <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                    <h2 class="fw-bold text-primary">Calendario del proyecto – Diagrama de Gantt</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                </div>
+
+            <div class="col-lg-10 col-12 mb-5 mx-auto text-center scroll-hidden">
+                    <div class="p-3 bg-white rounded shadow">
+                        <img src="assets/img/diagrama de graaanntt.png" alt="Organigrama" class="img-fluid rounded">
+                    </div>
+            </div>
+        </section>
+
+        <div class="card border-0 shadow-sm rounded-3 p-4 p-lg-5 scroll-hidden">
+                                        
+                                        
+                                        <div class="col-12 mt-5 mb-4 text-center scroll-hidden">
+                                            <h2 class="fw-bold text-primary">Marco de desarrollo</h2> <hr class="w-25 mx-auto text-primary" style="opacity: 1; height: 3px;">
+                                        </div>
+                                        
+
+                                        <div class="table-responsive">
+                                            <p>Para el modelo de proceso unificado, el marco de desarrollo es el siguiente: <br>
+                                            Referencias: c= comenzar  r= refinar <br>
+                                            </p>
+                                            <table class="table table-hover table-bordered align-middle text-center">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" >Disciplinas</th>
+                                                        <th scope="col" >Artefactos  /   Fases</th>
+                                                        <th scope="col" > Inicio</th>
+                                                        <th scope="col" >Elaboración</th>
+                                                        <th scope="col" >Construcción</th>
+                                                        <th scope="col" >Transición</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td> Modelado del negocio</td>
+                                                        <td> Modelo del dominio</td>
+                                                        <td> </td>
+                                                        <td> C </td>
+                                                        <td> </td>
+                                                        <td> </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Requisitos</td>
+                                                        <td> Modelo del dominio</td>
+                                                        <td> Modelo de caso de usos <br>
+                                                            Visión <br>
+                                                            Especificación complementaria <br>
+                                                            Glosario <br>
+                                                        </td>
+
+                                                        <td> C <br>
+                                                            C <br>
+                                                            C <br>
+                                                            C <br>
+                                                        </td>
+
+                                                        <td> R  <br>
+                                                            R  <br>
+                                                            R  <br>
+                                                            R  <br>
+                                                        </td>
+                                                        <td>  </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Análisis y diseño</td>
+                                                        <td> Modelo del análisis</td>
+                                                        <td> </td>
+                                                        <td> C </td>
+                                                        <td> </td>
+                                                        <td> </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Implementación</td>
+                                                        <td> Modelo de implementación</td>
+                                                        <td> </td>
+                                                        <td>  C</td>
+                                                        <td> R</td>
+                                                        <td> R</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Gestión de proyecto</td>
+                                                        <td> Plan de desarrollo <br>
+                                                            Informe de viabilidad <br>
+                                                        </td>
+
+                                                        <td> C <br>
+                                                            C <br>
+                                                        </td>
+
+                                                        <td> R</td>
+                                                        <td> R</td>
+                                                        <td> R</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Pruebas</td>
+                                                        <td> Modelo de Prueba</td>
+                                                        <td> </td>
+                                                        <td> C </td>
+                                                        <td> R</td>
+                                                        <td> </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Entorno</td>
+                                                        <td> Marco de Desarrollo</td>
+                                                        <td> C</td>
+                                                        <td> R</td>
+                                                        <td> </td>
+                                                        <td> </td>
+                                                        
+                                                    </tr>
+
+                            
+
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container"><p class="mb-0">&copy; 2025 Proyecto integrador - Analisis en Sistemas de la Informacion</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
