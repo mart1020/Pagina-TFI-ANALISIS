@@ -142,6 +142,16 @@ main {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important; /* Sombra más fuerte */
 }
 
+body {
+    /* Asegúrate de que la ruta sea correcta desde la carpeta del CSS */
+    background-image: url('assets/img/Fondoazul.jpg'); 
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* =========================================
    5. FOOTER (Pie de página)
    ========================================= */
