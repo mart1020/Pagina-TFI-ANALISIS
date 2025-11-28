@@ -104,7 +104,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>1. </strong>El usuario solicita  “Alta de empleado”.</span> 
+                            <span><strong>1. </strong>El usuario solicita registrar nuevo empleado.</span> 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
@@ -114,7 +114,7 @@
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>3. </strong>El usuario completa y confirma</span> 
+                            <span><strong>3. </strong>El usuario ingresa y confirma</span> 
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
@@ -278,7 +278,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>1. </strong>El usuario solicita modificar datos del empleado</span> 
+                            <span><strong>1. </strong>El usuario solicita modificar datos del empleado.</span> 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
@@ -572,7 +572,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>1. </strong>El usuario ingresa “Legajo” de empleado </span> 
+                            <span><strong>1. </strong>El usuario inicia nueva consulta.</span> 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
@@ -585,15 +585,23 @@
                             <span><strong>3. </strong>Sistema valida información</span> 
                         </li>
 
-                          <li class="mb-3 d-flex align-items-start">
+                        <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>4. </strong>El sistema consulta y valida registros de asistencia en sistema de apoyo (reloj digital)</span> 
+                            <span><strong>4. </strong>El sistema se conecta con el sistema reloj</span> 
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-start">
+                            
+                            <span><strong>5. </strong>5.	El sistema consulta y valida registros de asistencia en sistema de apoyo (reloj digital)</span> 
+                        </li>
+
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>5. </strong>El sistema muestra los resultados.</span> 
+                            <span><strong>6. </strong>El sistema muestra los resultados.</span> 
                         </li>
+
 
 
                        
@@ -725,7 +733,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>1. </strong>El usuario ingresa “Legajo” de empleado </span> 
+                            <span><strong>1. </strong>El usuario solicita incorporar documento.</span> 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
@@ -735,49 +743,34 @@
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>3. </strong>El usuario selecciona “Carga de documentación”.</span> 
+                            <span><strong>3. </strong>El usuario selecciona tipo de documento.</span> 
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>4. </strong>El usuario Selecciona tipo de documento.</span> 
+                            <span><strong>4. </strong>El usuario ingresa archivo.</span> 
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>5. </strong>El usuario Adjunta archivo.</span> 
-                        </li>
-
-                        </li>
-
-                          <li class="mb-3 d-flex align-items-start">
-                            
-                            <span><strong>6. </strong>El sistema valida tamaño y formato</span> 
+                            <span><strong>5. </strong>El sistema valida tamaño y formato</span> 
                         </li>
 
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>7. </strong>El sistema guarda el archivo.</span> 
+                            <span><strong>6. </strong>El sistema guarda el archivo.</span> 
                         </li>
 
                         </li>
 
                           <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>8. </strong>El sistema registra la carga</span> 
+                            <span><strong>7. </strong>El sistema muestra confirmación.</span> 
                         </li>
 
-                        </li>
-
-                          <li class="mb-3 d-flex align-items-start">
-                            
-                            <span><strong>9. </strong>El sistema muestra confirmación.</span> 
-                        </li>
-
-
-                       
+                                
                        
                     </ul>
 
@@ -898,7 +891,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             
-                            <span><strong>1. </strong>El usuario ingresa “Legajo” </span> 
+                            <span><strong>1. </strong>El usuario solicita cambio de estado.</span> 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
@@ -1100,7 +1093,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT01 – Crear Empleado (Alta)</h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 1 — Alta de Empleado </h2>
 
                     
 
@@ -1109,7 +1102,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>ingresarEmpleado(datosEmpleado)</span>
+                            <span>altaEmpleado(datosEmpleado: DatosEmpleado)</span>
                         </li>
                        
                     </ul>
@@ -1119,41 +1112,12 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Crear nuevo empleado, generar legajo y registrar estado inicial.</span>
+                            <span>Caso de Uso: Alta de Empleado</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>datosEmpleado: nombre, apellido, DNI, área, fechaIngreso, estadoInicial</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Confirmación de alta</span>
-                        </li>
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Empleado creado</span>
-                        </li>
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Legajo generado</span>
-                        </li>
-
-                    </ul>
 
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
@@ -1161,13 +1125,13 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Usuario autenticado</span>
+                            <span>El usuario ha iniciado sesión.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>DNI no existente</span>
+                            <span>No existe un empleado con el mismo DNI.</span>
                         </li>               
 
                     </ul>
@@ -1179,24 +1143,40 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se crea el empleado</span>
+                            <span>Se crea una instancia de Empleado con los datos recibidos.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se genera el legajo</span>
+                            <span>Se crea una instancia de Legajo.</span>
                         </li>        
                         
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se registra estado inicial</span>
+                            <span>Se asocia el Legajo creado con el nuevo Empleado</span>
                         </li> 
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se registra histórico</span>
+                            <span>Se crea una instancia de HistoricoEstado.</span>
                         </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se asocia el registro de HistoricoEstado con el Empleado.</span>
+                        </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>•	Se establece el estado inicial del empleado según datosEmpleado.estadoInicial.</span>
+                        </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se agrega el nuevo empleado a la colección de empleados del sistema.</span>
+                        </li>
+
 
                     </ul>
 
@@ -1210,7 +1190,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT02 – Modificar Empleado</h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 2 — Modificación de Empleado </h2>
 
                     
 
@@ -1219,52 +1199,22 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>modificarEmpleado(legajo, dato, nuevoValor)</span>
+                            <span>modificarEmpleado(legajo: Entero, datosModificados: DatosEmpleado)</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+                    <h5 class="fw-bold mb-4">Referencias cruzadas:</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Actualizar información del empleado.</span>
+                            <span>Caso de Uso: Modificación de Empleado</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>legajo</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>dato a modificar</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>nuevoValor</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Confirmación de modificación</span>
-                        </li>
-                     
-
-                    </ul>
+                  
 
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
@@ -1272,13 +1222,13 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Empleado existe</span>
+                            <span>Existe un empleado asociado al legajo.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Usuario autorizado</span>
+                            <span>El usuario posee permisos de modificación.</span>
                         </li>               
 
                     </ul>
@@ -1290,15 +1240,25 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se actualiza el dato</span>
+                            <span>Se modifican los atributos del empleado con los valores incluidos en datosModificados.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Se registra histórico</span>
+                            <span>Se crea un registro en HistoricoModificacion.</span>
                         </li>         
 
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se asocia el registro de HistoricoModificacion con el empleado modificado.</span>
+                        </li> 
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Los atributos no incluidos en datosModificados permanecen sin cambios.</span>
+                        </li> 
+
                     </ul>
 
                 </div>
@@ -1311,7 +1271,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT03 – Baja de Empleado</h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 3 — Baja de Empleado </h2>
 
                     
 
@@ -1320,48 +1280,21 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>darBajaEmpleado(legajo, motivo)</span>
+                            <span>darBajaEmpleado(legajo: Entero, motivo: Texto)</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+                    <h5 class="fw-bold mb-4">Referencias cruzadas:</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Registrar baja definitiva o temporal del empleado.</span>
+                            <span>Caso de Uso: Baja de Empleado</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>legajo</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>motivo</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>•	Confirmación de baja</span>
-                        </li>
-                        
-
-                    </ul>
 
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
@@ -1369,13 +1302,13 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Empleado activo o en baja temporal</span>
+                            <span>El empleado está en estado Activo o Baja Temporal.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Usuario autorizado</span>
+                            <span>El usuario tiene permiso para gestionar bajas</span>
                         </li>               
 
                     </ul>
@@ -1387,18 +1320,28 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Estado actualizado</span>
+                            <span>Se modifica el atributo estado del empleado a BajaDefinitiva o BajaTemporal según corresponda.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Legajo bloqueado</span>
+                            <span>Se crea un registro en HistoricoEstado.</span>
                         </li>        
                         
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Histórico actualizado</span>
+                            <span>Se asocia el registro de historial con el empleado</span>
+                        </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se bloquea el Legajo para futuras modificaciones (solo lectura).</span>
+                        </li> 
+
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El atributo motivoBaja del historial se establece con el valor indicado</span>
                         </li> 
 
                        
@@ -1415,7 +1358,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT04 – Consultar Asistencia</h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 4 — Consulta de Asistencia </h2>
 
                     
 
@@ -1424,44 +1367,22 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>consultarAsistencia(filtros)</span>
+                            <span>consultarAsistencia(filtros: FiltrosConsulta)</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+                    <h5 class="fw-bold mb-4">Referencias cruzadas:</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Filtrar registros de asistencia y mostrarlos.</span>
+                            <span>Caso de Uso: Consulta</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>filtros (legajo, área, estado, fecha, nombre/apellido)</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Lista de registros de asistencia coincidentes</span>
-                        </li>
-                        
-
-                    </ul>
+                   
 
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
@@ -1469,13 +1390,13 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Usuario autenticado</span>
+                            <span>Existen registros sincronizados desde el reloj biométrico.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Registros existentes</span>
+                            <span>El usuario está autenticado.</span>
                         </li>               
 
                     </ul>
@@ -1487,7 +1408,19 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>No modifica datos</span>
+                            <span>Se obtiene un conjunto filtrado de registros Asistencia.</span>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>No se crean, modifican o eliminan objetos en el sistema.</span>
+
+                        </li>
+
+                          <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>No cambia ningún estado del modelo.</span>
 
                         </li>
 
@@ -1504,7 +1437,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT05 – Cargar Documento</h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 5 — Carga de Documento </h2>
 
                     
 
@@ -1513,52 +1446,22 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>cargarDocumento(legajo, tipoDocumento, archivo)</span>
+                            <span>cargarDocumento(legajo: Entero, tipo: TipoDocumento, archivo: Archivo)</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+                    <h5 class="fw-bold mb-4">Referencias cruzadas:</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Validar y almacenar un documento asociado al empleado.</span>
+                            <span>Caso de Uso: Carga de Documentación</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>legajo</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>tipoDocumento</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>archivo</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Confirmación de carga</span>
-                        </li>
-                        
-
-                    </ul>
+                    
 
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
@@ -1572,8 +1475,14 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Archivo válido</span>
-                        </li>               
+                            <span>El archivo tiene formato y tamaño permitido.</span>
+                        </li>   
+                        
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El usuario está autorizado.</span>
+
+                        </li>
 
                     </ul>
 
@@ -1584,18 +1493,50 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Archivo almacenado</span>
+                            <span>Se crea una instancia de Documento.</span>
 
                         </li>
                         
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Documento registrado</span>
+                            <span>Se establece el tipo del documento según parámetro.</span>
 
                         </li>
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Versionado preservado (si existe documento previo)</span>
+                            <span>Se almacena físicamente el archivo en el sistema.</span>
+
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se asocia el documento creado al empleado.</span>
+
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se registra un nuevo elemento en HistoricoDocumental.</span>
+
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Si ya existía un documento de ese tipo:</span>
+
+                        </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se conserva versión anterior.</span>
+
+                        </li>
+
+                         </li>
+
+                         <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se crea una versión nueva.</span>
 
                         </li>
 
@@ -1612,7 +1553,7 @@
 
                 <div class="card border-0 border-start border-primary border-5 shadow-sm rounded-3 p-4 p-lg-5">
                     
-                    <h2 class="fw-bold mb-4">Contrato CONT06 – Cambio de Estado </h2>
+                    <h2 class="fw-bold mb-4">CONTRATO 6 — Cambio de Estado </h2>
 
                     
 
@@ -1621,66 +1562,35 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>cambiarEstado(legajo, nuevoEstado, motivo)</span>
+                            <span>cambiarEstado(legajo: Entero, nuevoEstado: Estado, motivo: Texto)</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Responsabilidad básica:</h5>
+                    <h5 class="fw-bold mb-4">Referencias cruzadas:</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Actualizar el estado del empleado.</span>
+                            <span>Caso de Uso: Cambio de Estado</span>
                         </li>
                        
                     </ul>
 
-                    <h5 class="fw-bold mb-4">Entradas:</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>legajo</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>nuevoEstado</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>motivo</span>
-                        </li>
-                      
-                      
-                       
-                    </ul>
-
-                    <h5 class="fw-bold mb-4">Salidas:</h5>
-
-                    <ul class="list-unstyled">
-
-                         <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Confirmación de cambio</span>
-                        </li>
-                        
-
-                    </ul>
-
+                    
                     <h5 class="fw-bold mb-4">Precondiciones:</h5>
 
                     <ul class="list-unstyled">
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Empleado existe</span>
+                            <span>El empleado existe.</span>
 
                         </li>
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Usuario autorizado</span>
+                            <span>El usuario está autorizado para ejecutar la transición.</span>
                         </li>               
 
                     </ul>
@@ -1692,13 +1602,31 @@
 
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Estado actualizado</span>
+                            <span>Se modifica el atributo estado del empleado al valor nuevoEstado.</span>
 
                         </li>
                         
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
-                            <span>Histórico registrado</span>
+                            <span>Se crea una instancia de HistoricoEstado.</span>
+
+                        </li>
+
+                                 <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se asocia el nuevo registro histórico al empleado.</span>
+
+                        </li>
+
+                                 <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>Se almacena el motivo del cambio de estado.</span>
+
+                        </li>
+
+                                 <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-caret-right-fill text-primary me-2 mt-1"></i>
+                            <span>El reloj biométrico no participa (no se generan transiciones automáticas).</span>
 
                         </li>
 
@@ -1738,19 +1666,7 @@
         </section>
 
 
-        <div class="row justify-content-center mb-5 scroll-hidden">
-            <div class="col-lg-10">
-                <div class="p-5 bg-light rounded-3 border border-secondary-subtle">
-                    <h3 class="fw-bold text-dark mb-3">3. Conclusiones Preliminares</h3>
-                    <p>
-                        Con base en lo expuesto, se concluye que la arquitectura propuesta satisface los requerimientos no funcionales de escalabilidad y seguridad solicitados por el cliente.
-                    </p>
-                    <p class="mb-0 text-muted fst-italic">
-                        * Este documento está sujeto a revisiones y cambios por parte de la cátedra hasta la fecha de entrega final.
-                    </p>
-                </div>
-            </div>
-        </div>
+      
 
     </main>
 
